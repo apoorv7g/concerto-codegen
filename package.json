@@ -20,6 +20,7 @@
         "postlicchk": "npm run doc",
         "doc": "jsdoc --pedantic --recurse -c jsdoc.json",
         "test": "nyc mocha --recursive -t 10000",
+        "test:verify": "mocha test/verification --timeout 60000",
         "test:updateSnapshots": "nyc mocha --updateSnapshot --recursive -t 10000",
         "test:watch": "nyc mocha --watch --recursive -t 10000",
         "mocha": "mocha --recursive -t 10000",
